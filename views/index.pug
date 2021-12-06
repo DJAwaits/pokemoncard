@@ -1,0 +1,35 @@
+extends layout
+
+block content
+  div.card-container
+      div.card
+          div.card-header
+              div.name=pokemon.name
+              div.hit-points=pokemon.hitpoints
+              div.type
+                  img(src=pokemon.type)
+          div.pokemon-area
+              div.pokemon-image
+                  img(src=pokemon.pokemonimage)
+          div.info
+              div.moves
+                  div.move-1
+                      div.cost
+                          img(src=pokemon.move1cost)
+                      div.brainwave=pokemon.move1name
+                      div.damage=pokemon.move1damage
+                  div.move-2
+                      div.cost
+                          img(src=pokemon.move2cost1)
+                          img(src=pokemon.move2cost2    )
+                      div.move-2-name=pokemon.move2name
+                      div.damage=pokemon.move2damage
+              div.weakness=pokemon.weakness
+                  div.weakness-type
+                    img(src=pokemon.weaknesstype)
+              div.resistance=pokemon.resistance
+                  div.resistance-cost
+                    img(src=pokemon.resistancetype)
+              div.retreat=pokemon.retreat
+                  div.retreat-cost
+                    img(src=pokemon.retreatcost)
